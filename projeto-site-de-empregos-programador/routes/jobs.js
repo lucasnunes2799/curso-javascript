@@ -1,7 +1,7 @@
 const { Router } = require('express');
-const express = require('express');
-const router  = express.Router();
-const Job     = require('../models/Job');
+const express    = require('express');
+const router     = express.Router();
+const Job        = require('../models/Job');
 
 
 router.get('/test',(req, res) => {
@@ -9,6 +9,7 @@ router.get('/test',(req, res) => {
 });
 
 // add job via post
+
 router.post('/add', (req, res) => {
 
     let {title, salary, company, description, email, new_job} = req.body;
